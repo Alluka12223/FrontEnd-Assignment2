@@ -1,0 +1,61 @@
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: rgba(174, 183, 240, 0.207);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  color-scheme: dark;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+main .frontPage {
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-height: 75vh;
+}
+
+.innerFront h2 {
+  text-align: center;
+}
+
+main .innerFront {
+  border-radius: 10px;
+  background-color: rgba(174, 183, 240, 0.207);
+}
+
+.active-category {
+  color: powderblue;
+}
+
+.search-icon {
+  fill: powderblue;
+  width: 20px;
+}
+
+.logo-text {
+  font-family: 'Limelight';
+  padding: 0px 0 0 15px;
+  font-size: 30px;
+  margin-top: 15px;
+  display: inline-block;
+  color: black;
+}
+
+.movie-link,
+.screening-link,
+.category-link {
+  text-decoration: none;
+}
+
+.movie,
+.screening {
+  height: 100%;
+}
