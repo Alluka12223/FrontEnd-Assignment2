@@ -6,6 +6,7 @@ import Welcome from "./pages/Welcome"
 import Movies from "./pages/Movies"
 import MovieDetails from "./pages/MovieDetails"
 import Receipt from "./pages/Receipt"
+import Page404 from "./pages/Page404"
 import ScreeningList from "./pages/ScreeningList"
 import DisplaySeats from "./components/DisplaySeats"
 import { useStates } from './utilities/states'
@@ -62,6 +63,7 @@ export default function App() {
           <Route path="screen-list" element={<ScreeningList />}></Route>
           <Route path="booking/:screeningId" element={<DisplaySeats />} />
           <Route path="/receipt" element={< Receipt />} />
+          <Route path="*" element={< Page404 />} />
         </Routes>
       </div>
     </main>
