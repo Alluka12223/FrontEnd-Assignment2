@@ -3,6 +3,10 @@ import { useEffect } from "react"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Welcome from "./pages/Welcome"
+import Movies from "./pages/Movies"
+import MovieDetails from "./pages/MovieDetails"
+import { useStates } from './utilities/states'
+import { kebabify } from './utilities/kebabify'
 
 export default function App() {
   const s = useStates('screenings', {
@@ -50,6 +54,8 @@ export default function App() {
       <div className="container mt-4 mb-3">
         <Routes>
           <Route path="/" element={< Welcome />} />
+          <Route path="/movies" element={< Movies />} />
+          <Route path="/movie-detail/:slug" element={< MovieDetails />} />
         </Routes>
       </div>
     </main>
