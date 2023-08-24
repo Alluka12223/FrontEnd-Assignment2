@@ -5,6 +5,8 @@ import Footer from "./components/Footer"
 import Welcome from "./pages/Welcome"
 import Movies from "./pages/Movies"
 import MovieDetails from "./pages/MovieDetails"
+import ScreeningList from "./pages/ScreeningList"
+import DisplaySeats from "./components/DisplaySeats"
 import { useStates } from './utilities/states'
 import { kebabify } from './utilities/kebabify'
 
@@ -56,6 +58,9 @@ export default function App() {
           <Route path="/" element={< Welcome />} />
           <Route path="/movies" element={< Movies />} />
           <Route path="/movie-detail/:slug" element={< MovieDetails />} />
+          <Route path="screen-list" element={<ScreeningList />}></Route>
+          <Route path="booking/:screeningId" element={<DisplaySeats />} />
+        
         </Routes>
       </div>
     </main>
