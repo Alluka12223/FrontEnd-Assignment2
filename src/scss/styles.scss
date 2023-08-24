@@ -59,3 +59,147 @@ main .innerFront {
 .screening {
   height: 100%;
 }
+
+.screening-and-seats {
+  text-align: center;
+  background-color: rgba(174, 183, 240, 0.207);
+}
+
+.poster-screen {
+  border: 5px solid #000000;
+  width: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  aspect-ratio: 20 / 9;
+}
+
+.seats {
+  text-align: center;
+}
+
+.seats>.seats-row {
+  display: inline-block;
+}
+
+.seats>.seats-row>div {
+  background-color: white;
+  color: black;
+  float: right;
+  padding-top: 3px;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  width: 30px;
+  height: 30px;
+  margin: 3px 1px;
+  cursor: pointer;
+}
+
+.seats>.seats-row>.selected {
+  background-color: #5cd02f;
+  color: white;
+}
+
+.seats>.seats-row>.occupied {
+  background-color: rgb(152, 28, 28);
+  color: white;
+  cursor: not-allowed;
+}
+
+
+.receipt{
+  background-color: rgba(174, 183, 240, 0.207);
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+  .seats>.seats-row>div {
+    font-size: 18px;
+    padding-top: 0px;
+    padding-left: 4px;
+    width: 30px;
+    height: 30px;
+    margin: 2px 1px;
+  }
+
+  .seats>.seats-row:first-child>div {
+    padding-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  main .container .frontPage {
+    margin-top: 0 !important;
+  }
+
+  .frontPage {
+    padding: 20px !important;
+  }
+
+  .innerFront {
+    padding: 20px !important;
+  }
+
+  .container {
+    overflow-x: hidden;
+  }
+
+  .seats .seats-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .seats {
+    overflow-y: hidden;
+    padding: 10px;
+    background-color: rgba(103, 109, 85, 0.11);
+  }
+
+  .seats>.seats-row {
+    width: 420px;
+    margin-bottom: -15px;
+  }
+
+  .seats>.seats-row>div {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .logo-text {
+    font-size: 23px;
+  }
+
+  main .container .frontPage {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  button {
+    font-size: 18px !important;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+}
